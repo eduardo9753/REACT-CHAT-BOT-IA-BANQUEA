@@ -36,7 +36,9 @@ export const BodyChat = () => {
     setLoading(true);
 
     // Llamando a la API http://192.168.18.8:5000
-    const response = await fetch("https://1mf6c2b1-5000.brs.devtunnels.ms/chat/serums", {
+    //http://134.209.74.55/chat/serums
+    //https://1mf6c2b1-5000.brs.devtunnels.ms/chat/serums
+    const response = await fetch("http://134.209.74.55/chat/serums", {
       method: "POST",
       headers: {
         "Content-Type": `application/json`,
