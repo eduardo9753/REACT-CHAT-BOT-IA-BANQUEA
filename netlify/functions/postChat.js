@@ -11,7 +11,7 @@ export async function handler(event) {
     try {
         const body = JSON.parse(event.body);
 
-        const response = await fetch("https://134.209.74.55/chat/serums", {
+        const response = await fetch("https://134.209.74.55", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(body),
