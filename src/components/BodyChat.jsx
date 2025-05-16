@@ -11,7 +11,11 @@ import {
   AiFillDislike,
   AiOutlineDislike,
 } from "react-icons/ai";
-import { AiOutlineDoubleRight,AiOutlineDoubleLeft,AiOutlineMenu } from "react-icons/ai";
+import {
+  AiOutlineDoubleRight,
+  AiOutlineDoubleLeft,
+  AiOutlineMenu,
+} from "react-icons/ai";
 import { Sidebar } from "./Sidebar";
 
 export const BodyChat = () => {
@@ -57,12 +61,11 @@ export const BodyChat = () => {
 
   const handleSidebar = () => {
     setIsHidden(!isHidden);
-  }
-
+  };
 
   return (
     <main className={style.main}>
-      <Sidebar isHidden={isHidden}/>
+      <Sidebar isHidden={isHidden} />
 
       <div className={style.sidechat}>
         {/* Componente para header de chat */}

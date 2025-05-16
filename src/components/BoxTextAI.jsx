@@ -3,7 +3,7 @@ import style from "../styles/BoxTextAI.module.css";
 import { ImArrowUp2 } from "react-icons/im";
 
 export const BoxTextAI = ({ handleSend, isLoadingAnswer }) => {
-  // Para enviar un mensaje: 
+  // Para enviar un mensaje:
   // 1. Primero preguntar si isLoadingAnswer es false
   // 2. preguntar si el input NO esta vacio
   // 3. enviar
@@ -33,11 +33,15 @@ export const BoxTextAI = ({ handleSend, isLoadingAnswer }) => {
           onKeyDown={(e) => {
             if (e.key === "Enter" && !e.shiftKey) {
               e.preventDefault(); // evita el salto de línea
-              sendMessage(e);     // ejecuta el envío
+              sendMessage(e); // ejecuta el envío
             }
           }}
         ></textarea>
-        <button className={style.sendButton} onClick={sendMessage} disabled={!inputValue.trim()}>
+        <button
+          className={style.sendButton}
+          onClick={sendMessage}
+          disabled={!inputValue.trim()}
+        >
           <ImArrowUp2 />
         </button>
       </div>
