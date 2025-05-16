@@ -10,7 +10,7 @@ export const Sidebar = ({ isHidden }) => {
     const response = await fetch(
       //
       //https://1mf6c2b1-5000.brs.devtunnels.ms/titulos/serums
-      "http://134.209.74.55/titulos/serums"
+      "https://134.209.74.55/titulos/serums"
     );
     const { titulos } = await response.json();
     setTitles([...titulos]);
