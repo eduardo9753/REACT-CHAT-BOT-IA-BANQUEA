@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 
 export async function handler() {
     try {
-        const response = await fetch("http://134.209.74.55/titulos/serums");
+        const response = await fetch("https://134.209.74.55/titulos/serums");
         const data = await response.json();
 
         return {
