@@ -42,7 +42,7 @@ export const BodyChat = () => {
     // Llamando a la API http://192.168.18.8:5000
     //http://134.209.74.55/chat/serums
     //https://134.209.74.55/chat/serums
-    const response = await fetch("/.netlify/functions/postChat", {
+    const response = await fetch("https://134.209.74.55/chat/serums", {
       method: "POST",
       headers: {
         "Content-Type": `application/json`,
