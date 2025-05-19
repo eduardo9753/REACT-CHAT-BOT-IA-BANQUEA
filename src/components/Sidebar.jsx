@@ -10,7 +10,7 @@ export const Sidebar = ({ isHidden }) => {
     const response = await fetch(
       //
       //https://134.209.74.55/titulos/serums
-      "https://134.209.74.55/titulos/serums"
+      "https://bot.banquea.pe/titulos/serums"
     );
     const { titulos } = await response.json();
     setTitles([...titulos]);
