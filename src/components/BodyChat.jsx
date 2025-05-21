@@ -101,7 +101,7 @@ export const BodyChat = () => {
                     </div>
                     <div className={`${style.message} ${style.bot}`}>
                       <p>{text}</p>
-                      {/* ICONOS LIKE, DISLIKE */}
+                      {/* ICONOS LIKE, DISLIKE 
                       <div className={style.icons}>
                         <div>
                           <AiOutlineLike />
@@ -110,6 +110,7 @@ export const BodyChat = () => {
                           <AiOutlineDislike />
                         </div>
                       </div>
+                      */}
                     </div>
                   </div>
                 )
