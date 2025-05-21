@@ -31,6 +31,15 @@ export const Sidebar = ({ isHidden }) => {
             <h1 className={style.headerTitle}>Documentos</h1>
           </header>
 
+          {/* LINK NUEVO PARA EXPLICAR DE QUE TRATA EL BOT */}
+          <a href="/chat" className={style.title}>
+            Inicio
+          </a>
+          <a href="/about" className={style.title}>
+            ¿De qué trata este bot?
+          </a>
+
+          {/**LISK DE LOS LIBROS  
           <div className={style.containerTitles}>
             {loaderTitles ? (
               <div className="loaderTitles"></div>
@@ -47,6 +56,7 @@ export const Sidebar = ({ isHidden }) => {
               ))
             )}
           </div>
+         LISK DE LOS LIBROS */}
         </div>
       </article>
     </section>

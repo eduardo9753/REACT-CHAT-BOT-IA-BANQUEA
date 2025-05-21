@@ -21,7 +21,7 @@ import { Sidebar } from "./Sidebar";
 export const BodyChat = () => {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [isHidden, setIsHidden] = useState(false);
+  const [isHidden, setIsHidden] = useState(true); //ocultando el sidebar
 
   const bottomRef = useRef(null);
 
