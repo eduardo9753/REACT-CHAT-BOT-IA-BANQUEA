@@ -33,8 +33,15 @@ export const AboutBot = () => {
           <img
             src={botIcon}
             alt="Bot Icon"
-            style={{ width: "80px", marginBottom: "1rem" }}
+            style={{
+              width: "40px", // Reducida a la mitad
+              height: "40px", // Asegura proporción cuadrada
+              borderRadius: "50%", // Forma circular
+              objectFit: "cover", // Ajuste del contenido en el círculo
+              marginBottom: "1rem",
+            }}
           />
+
           <div className={styleSidebar.containerTitles}>
             <h2 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
               ¿De qué trata este asistente?
