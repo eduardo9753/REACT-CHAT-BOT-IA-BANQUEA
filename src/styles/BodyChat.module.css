@@ -18,7 +18,6 @@
   align-items: center;
   text-align: center;
 
-  max-height: 60vh;    /* Limita la altura a 60% del viewport */
   overflow-y: auto;    /* Muestra scroll vertical si excede la altura */
 }
 
