@@ -8,6 +8,21 @@
   position: relative;
 }
 
+.div {
+  padding: 2rem;
+  color: white;
+  background: #121212;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  max-height: 60vh;    /* Limita la altura a 60% del viewport */
+  overflow-y: auto;    /* Muestra scroll vertical si excede la altura */
+}
+
+
 .sidechat {
   flex: 1;
   display: flex;

@@ -49,6 +49,8 @@
     /* overflow-y: scroll; */
     flex: 1 1 auto;
     /* border: 1px solid red; */
+    max-height: 60vh;    /* Limita la altura a 60% del viewport */
+    overflow-y: auto;    /* Muestra scroll vertical si excede la altura */
 }
 
 

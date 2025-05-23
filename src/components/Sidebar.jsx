@@ -35,8 +35,13 @@ export const Sidebar = ({ isHidden }) => {
           <a href="/chat" className={style.title}>
             Inicio
           </a>
+
           <a href="/about" className={style.title}>
             ¿De qué trata este bot?
+          </a>
+
+           <a href="/document" className={style.title}>
+            Documentos
           </a>
 
           {/**LISK DE LOS LIBROS  

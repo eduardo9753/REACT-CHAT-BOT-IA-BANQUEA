@@ -2,6 +2,7 @@ import { ChatLayout } from "./components/ChatLayout";
 import { PinView } from "./components/PinView";
 import { Routes, Route } from "react-router";
 import { AboutBot } from "./components/AboutBot"; // importando el nuevo componente
+import { BooksLinks } from "./components/Books"; //lista de docuemntos
 
 function App() {
   return (
@@ -11,8 +12,11 @@ function App() {
       <Route path="/chat" element={<ChatLayout />} />
 
       
-      {/**  NUEVAS RUTAS PARA EL BOT DE DESCRIPCION   */}
-      <Route path="/about" element={<AboutBot />} /> {/* nueva ruta */}
+      {/**  RUTA ACERCA DE QUE SIRVE EL BOT   */}
+      <Route path="/about" element={<AboutBot />} /> 
+
+       {/** RUTA PARA VER LOS LINKS    */}
+      <Route path="/document" element={<BooksLinks />} /> 
     </Routes>
   );
 }
